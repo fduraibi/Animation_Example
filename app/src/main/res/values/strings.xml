@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">مثال تحريك الرسومات</string>
+    <string name="move">حرك</string>
+    <string name="stop">أوقف</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 Fahad Alduraibi
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.fadvisor.animation_example.MainActivity"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:windowActionBar="false"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fae4e4"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp">
+
+        <SurfaceView
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:id="@+id/surfaceViewBoy"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/move"
+            android:id="@+id/buttonBoy"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="animateBoy" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e4effa"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp">
+
+        <SurfaceView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/surfaceViewGame"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/move"
+            android:id="@+id/buttonGame"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="animateGame" />
+
+    </RelativeLayout>
+</LinearLayout>
