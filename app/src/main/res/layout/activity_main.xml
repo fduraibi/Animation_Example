@@ -36,7 +36,8 @@
             android:layout_alignParentTop="false"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:onClick="animateBoy" />
+            android:onClick="animateBoy"
+            android:textColor="@android:color/black" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -48,21 +49,22 @@
         android:layout_marginBottom="10dp">
 
         <SurfaceView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/surfaceViewGame"
             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/buttonGame" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/move"
             android:id="@+id/buttonGame"
-            android:layout_alignParentTop="false"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:onClick="animateGame" />
+            android:onClick="animateGame"
+            android:textColor="@android:color/black"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 </LinearLayout>

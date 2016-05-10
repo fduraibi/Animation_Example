@@ -27,12 +27,14 @@ public class AnimGame extends SurfaceView implements Runnable {
 
     boolean animate = false;
 
+    // Variables for the boy animation
     int boyFrame = 0;
     int boyTotalFrames = 6; // the total number of frames in the sprite
     Bitmap boyImage;
     int boyHeight;
     int boyWidth;
 
+    // Variables for the ground animation
     int groundFrame = 0;
     int groundTotalFrames = 3;  // Each tile is divided into this number of steps (more steps = slower motion)
     Bitmap groundImage;
@@ -40,6 +42,7 @@ public class AnimGame extends SurfaceView implements Runnable {
     int groundWidth;
     int groundTileWidth;
 
+    // Variables for the background animation
     int backgroundFrame = 0;
     int backgroundTotalFrames = 240;  // Each tile is divided into this number of steps (more steps = slower motion)
     Bitmap backgroundImage;
@@ -193,8 +196,6 @@ public class AnimGame extends SurfaceView implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-        //thread = null; // do i need this?
     }
 
     public void resume() {

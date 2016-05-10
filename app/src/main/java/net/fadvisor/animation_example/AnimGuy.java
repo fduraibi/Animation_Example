@@ -84,7 +84,7 @@ public class AnimGuy extends SurfaceView implements Runnable {
             if (surfaceHolder.getSurface().isValid()) {
                 Canvas canvas = surfaceHolder.lockCanvas();
 
-                // Clear any existing drawing
+                // Clear any existing drawing from previous run
                 canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
 
                 x = frame * imgWidth;
@@ -113,8 +113,6 @@ public class AnimGuy extends SurfaceView implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-        //thread = null; // do i need this?
     }
 
     public void resume() {
